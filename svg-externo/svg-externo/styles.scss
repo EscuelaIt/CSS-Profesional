@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+}
+section{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 5rem auto 0;
+}
+svg{
+  height: 100%;
+  width: 100%;
+}
+.svg-icon{
+  height: 7rem;
+  width: 7rem;
+  border: 4px solid #FFCC00;
+  border-radius: 50%;
+}
+.service{
+  svg{
+    padding: .7em;
+    fill: #FFCC00;
+  }
+  svg,
+  .path3,
+  .path4,
+  .path5{
+    transition: fill .5s;
+  }
+  &:hover{
+    svg{
+      fill: gray;
+    }
+    .path3,
+    .path4,
+    .path5{
+        fill: red;
+      }
+  }
+}

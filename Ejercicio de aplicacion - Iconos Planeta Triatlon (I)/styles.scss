@@ -1,0 +1,518 @@
+/* Custom Diana Aceves normalize.css*/
+
+/*------------------------------------*\
+    $NORMALIZE
+\*------------------------------------*/
+
+/* ==========================================================================
+   VIEWPORT
+   ========================================================================== */
+
+@-webkit-viewport {
+  width : device-width;
+}
+
+@-moz-viewport {
+  width : device-width;
+}
+
+@-ms-viewport {
+  width : device-width;
+}
+
+@-o-viewport {
+  width : device-width;
+}
+
+@viewport {
+  width : device-width;
+}
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,hgroup,menu,nav,section,time,mark,audio,video
+{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+*{
+    &,
+    &::before,
+    &::after{
+    -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+        -ms-box-sizing:border-box;
+         -o-box-sizing:border-box;
+            box-sizing:border-box;
+    }
+}
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+audio,
+canvas,
+video {
+    display: block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -webkit-tap-highlight-color : transparent;
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    -webkit-overflow-scrolling : touch;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover,
+a:focus {
+    outline: 0;
+    color: inherit;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+// HEADINGS ====================================================
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin : 0;
+  font-size: 100%;
+  font-weight : normal;
+  text-rendering : optimizelegibility;
+  a {
+    text-decoration: none;
+  }
+}
+
+/* ==========================================================================
+  Lists
+========================================================================== */
+
+/*
+ * Addresses margins set differently in IE6/7.
+ */
+
+dl,
+dd,
+menu,
+ol,
+ul {
+    list-style: none;
+    list-style-image: none;
+}
+
+
+/* ==========================================================================
+  Embedded content
+========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode : bicubic;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"],
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer; /* 2 */
+    box-shadow: none;
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+
+    overflow: auto; /* 1 */
+    vertical-align: middle; /* 2 */
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?im3pfa');
+    src:    url('fonts/icomoon.eot?im3pfa#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?im3pfa') format('truetype'),
+        url('fonts/icomoon.woff?im3pfa') format('woff'),
+        url('fonts/icomoon.svg?im3pfa#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-coaching:before {
+    content: "\e902";
+}
+.icon-entrenador:before {
+    content: "\e903";
+}
+.icon-eventos:before {
+    content: "\e904";
+}
+.icon-nutricionista:before {
+    content: "\e905";
+}
+
+nav {
+  text-transform: uppercase;
+  border-top: 7px solid #FFCC00;
+  font-weight: bold;
+  font-style: italic;
+  ul {
+    width: 90%;
+    max-width: 85rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    text-align: center;
+    a {
+      padding: 1em;
+      display: inline-block;
+      border-bottom: 4px solid transparent;
+      transition: border-bottom .4s ease;
+      &:hover {
+        border-bottom: 4px solid #FFCC00;
+      }
+    }
+  }
+}
+.wrapper{
+  width: 90%;
+  max-width: 85rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services{
+  font-size: 1.05em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  background-color: #E7E7DF;
+  padding: 1.5rem 1rem;
+  .excerpt{
+    width: 85%;
+    display: none;
+    margin: 2em auto;
+    font-size: 1.05em;
+    text-transform: none;
+  }
+}
+.section__title{
+  font-size: 1.3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.services__container{
+  .service{
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    &:nth-child(2n+1){
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+    >div{
+      width: 50%;
+    }
+  }
+  [class*='icon-']{
+    display: inline-block;
+    background-color: white;
+    color: #FFCC00;
+    font-size: 3.3em;
+    height: 2em;
+    width: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 50%;
+  }
+  .icon-entrenador::before,
+  .icon-coaching::before,
+  .icon-nutricionista::before{
+    font-size: 1.1em;
+  }
+}
+
+.disciplines{
+  padding: 5rem 0;
+}
+.disciplines__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.discipline{
+  text-align: center;
+  width: 23%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &.triatlon{
+    background-image: url(http://portfolio.hoyheaprendido.es/planeta/images/bg_triatlon.jpg);
+  }
+  &.running{
+    background-image: url(http://portfolio.hoyheaprendido.es/planeta/images/bg_running.jpg);
+  }
+  &.natacion{
+    background-image: url(http://portfolio.hoyheaprendido.es/planeta/images/bg_natacion.jpg);
+  }
+  &.ciclismo{
+    background-image: url(http://portfolio.hoyheaprendido.es/planeta/images/bg_ciclismo.jpg);
+  }
+  &::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 100%;
+  }
+  .discipline__name{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5em;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 45em) {
+.services .excerpt{
+    display: block;
+  }
+  .services__container{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .service{
+      margin-left: 0;
+      margin-right: 0;
+      max-width: none;
+      display: flex;
+      align-items: center;
+      &, &:nth-child(2n+1){
+        flex-direction: column;
+        text-align: center;
+      }
+      >div{
+        width: auto;
+      }
+    }
+    .service__name{
+      margin-top: 1.5em;
+    }
+    .fa{
+      font-size: 4em;
+    }
+}
+
+
+
+} //End media
