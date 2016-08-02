@@ -1,0 +1,533 @@
+/*
+* En general, lo más normal para consultar el CSS minimizado (de cualquier fuente) sería usar el propio navegador,
+* por medio de las herramientas de desarrolladores, que permiten la inspección de los elementos,
+* y conocer sus propiedades CSS. Sin embargo eso no es siempre la situación más favorable para estudiar un código completo.
+* La segunda opción, específica para este curso, sería ir a los ejemplos de Code Pen realizados por Diana durante las clases,
+* ya que allí somos capaces de ver el código tal como ella lo escribió.
+* Si ninguna de esas opciones es satisfactoria, entonces se puede encontrar aquí el código minimizado.
+* Hemos usado una herramienta pública llamada Unminify http://unminify.com/
+* Al tratarse de un proceso de des-minimización puede que el código obtenido no sea tal cual lo escribió Diana en clase.
+*/
+
+
+@-webkit-viewport {
+    width: device-width
+}
+
+@-moz-viewport {
+    width: device-width
+}
+
+@-ms-viewport {
+    width: device-width
+}
+
+@viewport {
+    width: device-width
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent
+}
+
+*,
+*::before,
+*::after {
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+audio,
+canvas,
+video {
+    display: block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    -webkit-overflow-scrolling: touch
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+a:active,
+a:hover,
+a:focus {
+    outline: 0;
+    color: inherit
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+    text-rendering: optimizelegibility
+}
+
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a,
+h6 a,
+.h6 a {
+    text-decoration: none
+}
+
+dl,
+dd,
+menu,
+ol,
+ul {
+    list-style: none;
+    list-style-image: none
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%
+}
+
+button,
+input {
+    line-height: normal
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: none
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: middle
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url("fonts/icomoon.eot?im3pfa");
+    src: url("fonts/icomoon.eot?im3pfa#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?im3pfa") format("truetype"), url("fonts/icomoon.woff?im3pfa") format("woff"), url("fonts/icomoon.svg?im3pfa#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-coaching:before {
+    content: "\e902"
+}
+
+.icon-entrenador:before {
+    content: "\e903"
+}
+
+.icon-eventos:before {
+    content: "\e904"
+}
+
+.icon-nutricionista:before {
+    content: "\e905"
+}
+
+nav {
+    text-transform: uppercase;
+    border-top: 7px solid #FFCC00;
+    font-weight: bold;
+    font-style: italic
+}
+
+nav ul {
+    width: 90%;
+    max-width: 85rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+nav li {
+    text-align: center
+}
+
+nav li a {
+    padding: 1em;
+    display: inline-block;
+    border-bottom: 4px solid transparent;
+    -webkit-transition: border-bottom 0.4s ease;
+    transition: border-bottom 0.4s ease
+}
+
+nav li a:hover {
+    border-bottom: 4px solid #FFCC00
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 85rem;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.services {
+    font-size: 1.05em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    background-color: #E7E7DF;
+    padding: 1.5rem 1rem
+}
+
+.services .excerpt {
+    width: 85%;
+    display: none;
+    margin: 2em auto;
+    font-size: 1.05em;
+    text-transform: none
+}
+
+.section__title {
+    font-size: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic
+}
+
+.services__container .service {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.services__container .service:nth-child(2n+1) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    text-align: right
+}
+
+.services__container .service>div {
+    width: 50%
+}
+
+.services__container [class*='icon-'] {
+    display: inline-block;
+    background-color: white;
+    color: #FFCC00;
+    font-size: 3.3em;
+    height: 2em;
+    width: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 50%
+}
+
+.services__container .icon-entrenador::before,
+.services__container .icon-coaching::before,
+.services__container .icon-nutricionista::before {
+    font-size: 1.1em
+}
+
+.disciplines {
+    padding: 5rem 0
+}
+
+.disciplines__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.discipline {
+    text-align: center;
+    width: 23%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative
+}
+
+.discipline.triatlon {
+    background-image: url(http://portfolio.hoyheaprendido.es/planeta/images/bg_triatlon.jpg)
+}
+
+.discipline.running {
+    background-image: url(http://portfolio.hoyheaprendido.es/planeta/images/bg_running.jpg)
+}
+
+.discipline.natacion {
+    background-image: url(http://portfolio.hoyheaprendido.es/planeta/images/bg_natacion.jpg)
+}
+
+.discipline.ciclismo {
+    background-image: url(http://portfolio.hoyheaprendido.es/planeta/images/bg_ciclismo.jpg)
+}
+
+.discipline::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 100%
+}
+
+.discipline .discipline__name {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5em;
+    display: inline-block;
+    vertical-align: middle
+}
+
+@media screen and (min-width: 45em) {
+    .services .excerpt {
+        display: block
+    }
+    .services__container {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+    .services__container .service {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: none;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+    .services__container .service,
+    .services__container .service:nth-child(2n+1) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center
+    }
+    .services__container .service>div {
+        width: auto
+    }
+    .services__container .service__name {
+        margin-top: 1.5em
+    }
+    .services__container .fa {
+        font-size: 4em
+    }
+}

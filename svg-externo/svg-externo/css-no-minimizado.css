@@ -1,0 +1,64 @@
+/*
+* En general, lo más normal para consultar el CSS minimizado (de cualquier fuente) sería usar el propio navegador,
+* por medio de las herramientas de desarrolladores, que permiten la inspección de los elementos,
+* y conocer sus propiedades CSS. Sin embargo eso no es siempre la situación más favorable para estudiar un código completo.
+* La segunda opción, específica para este curso, sería ir a los ejemplos de Code Pen realizados por Diana durante las clases,
+* ya que allí somos capaces de ver el código tal como ella lo escribió.
+* Si ninguna de esas opciones es satisfactoria, entonces se puede encontrar aquí el código minimizado.
+* Hemos usado una herramienta pública llamada Unminify http://unminify.com/
+* Al tratarse de un proceso de des-minimización puede que el código obtenido no sea tal cual lo escribió Diana en clase.
+*/
+
+
+
+* {
+    box-sizing: border-box
+}
+
+section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 80%;
+    margin: 5rem auto 0
+}
+
+svg {
+    height: 100%;
+    width: 100%
+}
+
+.svg-icon {
+    height: 7rem;
+    width: 7rem;
+    border: 4px solid #FFCC00;
+    border-radius: 50%
+}
+
+.service svg {
+    padding: .7em;
+    fill: #FFCC00
+}
+
+.service svg,
+.service .path3,
+.service .path4,
+.service .path5 {
+    -webkit-transition: fill 0.5s;
+    transition: fill 0.5s
+}
+
+.service:hover svg {
+    fill: gray
+}
+
+.service:hover .path3,
+.service:hover .path4,
+.service:hover .path5 {
+    fill: red
+}
